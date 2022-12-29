@@ -1,0 +1,1 @@
+# BAMOE-KieServer-TestTimerOpenshift
