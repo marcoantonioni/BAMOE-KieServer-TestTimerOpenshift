@@ -121,16 +121,24 @@ BC_SERVER_URL=http://$(oc get route ${KIE_APP_NAME}-rhpamcentr -o jsonpath='{.sp
 
 ### Deploy app
 
-...nuovi pod: my-app-timers-kieserver-2...
+In BC import
+
+https://github.com/marcoantonioni/BAMOE-KieServer-TestTimer1
+
+
+attendere dopo deploy ...nuovi pod: my-app-timers-kieserver-2...
+
 
 ### Test app
 
 a cluster pulito eseguire un solo avvio e attendere esito nei log, buone probabilità di vedere avvio su un server e terminazione su altro, dimostra bilanciamento di carico
 
 avvio su thread pool default
+
 08:32:08,837 INFO [stdout] (default task-1) ===> TestTimer1 ENTRY pid[1] delay[PT22S]
 
 terminazione su thread pool EJB
+
 08:54:08,373 INFO [stdout] (EJB default - 1) ===> TestTimer1 EXIT pid[1] delay[PT22S]
 
 
