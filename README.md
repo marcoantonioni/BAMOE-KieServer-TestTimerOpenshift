@@ -128,6 +128,9 @@ https://github.com/marcoantonioni/BAMOE-KieServer-TestTimer1
 
 attendere dopo deploy ...nuovi pod: my-app-timers-kieserver-2...
 
+legge container app deployati in KieServer
+
+curl -u ${USER_PASSWORD} --insecure -H  "accept: application/xml" -X GET ${KIE_SERVER_URL}/services/rest/server/containers
 
 ### Test app
 
